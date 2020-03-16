@@ -1,12 +1,16 @@
 {
   "name": "@m1yh3m/array.patch.node.lib",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "array",
+    "patch",
+    "library"
+  ],
+  "author": "m1yh3m",
   "license": "ISC"
 }

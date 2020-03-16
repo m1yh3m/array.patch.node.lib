@@ -28,6 +28,39 @@ function insertAfterPosition(arr) {
   }
 }
 
+function insertBeforeItem(arr) {
+  arr = arr || this
+  if (arr === undefined || arr === null) {
+    return []
+  }
+  return function (item, val) {
+    const n = arr.indexOf(item)
+    return n < 0 ? arr : insertAtPosition(arr)(n - 1, val)
+  }
+}
+
+function insertAtItem(arr) {
+  arr = arr || this
+  if (arr === undefined || arr === null) {
+    return []
+  }
+  return function (item, val) {
+    const n = arr.indexOf(item)
+    return n < 0 ? arr : insertAtPosition(arr)(n, val)
+  }
+}
+
+function insertAfterItem(arr) {
+  arr = arr || this
+  if (arr === undefined || arr === null) {
+    return []
+  }
+  return function (item, val) {
+    const n = arr.indexOf(item)
+    return n < 0 ? arr : insertAtPosition(arr)(n + 1, val)
+  }
+}
+
 function toBitArray(arr) {
   arr = arr || this
   if (arr === undefined || arr === null) {
@@ -40,5 +73,8 @@ module.exports = {
   insertAfterPosition,
   insertAtPosition,
   insertBeforePosition,
-  toBitArray
+  insertAfterItem,
+  insertBeforeItem,
+  insertAtItem,
+  toBitArray,
 }
