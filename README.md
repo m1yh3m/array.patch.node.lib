@@ -13,7 +13,8 @@ var x = [1, 2, 3];
 
 lib.patch();
 
-x.toBitArray()[([1], [1, 0], [1, 1])];
+x.toBitArray();
+///[([1], [1, 0], [1, 1])]
 
 lib.depatch();
 
