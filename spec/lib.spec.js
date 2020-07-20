@@ -6,7 +6,8 @@ const {
     insertAtItem,
     insertBeforeItem,
     toBitArray,
-    filterMap
+    trues,
+    falses
 } = require('../lib')
 
 describe('insertBeforePosition', () => {
@@ -152,6 +153,26 @@ describe('toBitArray', () => {
         const numbers = [1, 2, 3]
         const expected = [[1], [1, 0], [1, 1]]
         const actual = toBitArray(numbers)
+        expect(actual).toEqual(expected)
+    })
+})
+
+describe('trues', () => {
+    it('returns array of indices which are true for a given condition', () => {
+        const numbers = [1, 2, 3, 4, 5, 6]
+        const expected = [0, 1, 2]
+        const condition = n => n < 4
+        const actual = trues(numbers, condition)
+        expect(actual).toEqual(expected)
+    })
+})
+
+describe('falses', () => {
+    it('returns array of indices which are true for a given condition', () => {
+        const numbers = [1, 2, 3, 4, 5, 6]
+        const expected = [3, 4, 5]
+        const condition = n => n < 4
+        const actual = falses(numbers, condition)
         expect(actual).toEqual(expected)
     })
 })

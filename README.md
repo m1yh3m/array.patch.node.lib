@@ -1,5 +1,7 @@
 # @m1yh3m/array.patch.node.lib
 
+NOTE: OO is useless. Don't use this crap!
+
 >
 > Default branch is `dev` .
 >

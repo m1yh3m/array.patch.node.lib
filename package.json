@@ -1,6 +1,6 @@
 {
   "name": "@m1yh3m/array.patch.node.lib",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,5 +12,8 @@
     "library"
   ],
   "author": "m1yh3m",
-  "license": "ISC"
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
