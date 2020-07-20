@@ -29,7 +29,6 @@ x.toBitArray();
 ## Functions available
 
 ``` 
-
 insertAfterPosition,
 insertAtPosition,
 insertBeforePosition,
@@ -39,3 +38,14 @@ insertAtItem,
 toBitArray,
 
 ```
+
+## Changelog
+
+### V5
+
+* Changes the way APIs work.
+
+### V4 
+
+* Introduces `dev` branch
+* Makes older private functions public
