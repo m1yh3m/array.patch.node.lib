@@ -13,7 +13,4 @@
   ],
   "author": "m1yh3m",
   "license": "ISC",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  }
 }
