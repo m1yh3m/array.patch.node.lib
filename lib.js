@@ -76,5 +76,5 @@ module.exports = {
   insertAfterItem,
   insertBeforeItem,
   insertAtItem,
-  toBitArray,
+  toBitArray
 }

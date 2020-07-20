@@ -1,18 +1,26 @@
 const {
-  insertAfterPosition,
-  insertAtPosition,
-  insertBeforePosition,
+    insertAfterPosition,
+    insertAtPosition,
+    insertBeforePosition,
+    insertAfterItem,
+    insertBeforeItem,
+    insertAtItem,
+    toBitArray,
 } = require('./lib')
 
 const {
-  patch,
-  depatch,
+    patch,
+    depatch,
 } = require('./patch')
 
 module.exports = {
-  insertAfterPosition,
-  insertAtPosition,
-  insertBeforePosition,
-  patch,
-  depatch,
+    insertAfterPosition,
+    insertAtPosition,
+    insertBeforePosition,
+    insertAfterItem,
+    insertBeforeItem,
+    insertAtItem,
+    toBitArray,
+    patch,
+    depatch,
 }

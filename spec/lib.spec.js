@@ -5,7 +5,8 @@ const {
   insertAfterItem,
   insertAtItem,
   insertBeforeItem,
-  toBitArray
+  toBitArray,
+  filterMap
 } = require('../lib')
 
 describe('insertBeforePosition', () => {

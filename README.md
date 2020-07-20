@@ -1,12 +1,16 @@
 # @m1yh3m/array.patch.node.lib
 
+>
+> Default branch is `dev` .
+>
+
 ## installation
 
-`npm i @m1yh3m/array.patch.node.lib`
+ `npm i @m1yh3m/array.patch.node.lib`
 
 ## usage
 
-```javascript
+``` javascript
 var lib = require("@m1yh3m/array.patch.node.lib");
 
 var x = [1, 2, 3];
@@ -20,4 +24,18 @@ lib.depatch();
 
 x.toBitArray();
 //TypeError: x.toBitArray is not a function
+```
+
+## Functions available
+
+``` 
+
+insertAfterPosition,
+insertAtPosition,
+insertBeforePosition,
+insertAfterItem,
+insertBeforeItem,
+insertAtItem,
+toBitArray,
+
 ```
